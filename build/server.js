@@ -19,8 +19,8 @@ app.use(express_1.default.json());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(CORS({
-    origin: "http://localhost:4200",
-    // origin: "https://locomate.onrender.com",
+    // origin: "http://localhost:4200",
+    origin: "https://locomate-frontend.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS"],
     credentials: true,
     exposedHeaders: ["Content-Length", "X-Foo", "X-Bar"],
