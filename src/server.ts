@@ -21,8 +21,8 @@ app.use(bodyParser.json());
 app.use(
   CORS(
     {
-    origin: "http://localhost:4200",
-    // origin: "https://locomate-frontend.vercel.app",
+    // origin: "http://localhost:4200",
+    origin: "https://locomate-frontend.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS"],
     credentials: true,
     exposedHeaders: ["Content-Length", "X-Foo", "X-Bar"],
