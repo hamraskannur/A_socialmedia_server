@@ -11,7 +11,7 @@ export const  nodemailer = async(id: string, email: string) => {
     token: crypto.randomBytes(32).toString('hex')
   }).save()
      
-  const url = `http://localhost:4200/verify/?id=${id}&token=${userToken.token}`
+  const url = `https://locomate-frontend.vercel.app/verify/?id=${id}&token=${userToken.token}`
 
   sendEmail(email, 'verify Email', url)
 }
